@@ -1,0 +1,43 @@
+.blog-post-content {
+  grid-area: content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  grid-template-rows: 470px 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    " ....  a-info ...."
+    " text  text   text ";
+}
+
+.author-info {
+  grid-area: a-info;
+  display: flex;
+  border: solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: fit-content;
+  background-color: silver;
+}
+
+.author-text {
+  width: 300px;
+}
+
+.author-text p {
+  margin: 0px;
+  padding: 10px;
+}
+#author-image {
+  width: 210px;
+  height: 1fr;
+}
+
+.blog-paragraphs {
+  grid-area: text;
+}

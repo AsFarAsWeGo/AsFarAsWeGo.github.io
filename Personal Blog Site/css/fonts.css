@@ -1,0 +1,54 @@
+h1 {
+  font-family: "Holtwood One SC", serif;
+  color: #fff;
+  background: #000080;
+  background: -moz-linear-gradient(left, #000080 0%, #1084d0 100%);
+  background: -webkit-linear-gradient(left, #000080 0%, #1084d0 100%);
+  background: linear-gradient(to right, #000080 0%, #1084d0 100%);
+}
+
+h2 {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: "Pridi", serif;
+  color: #fff;
+  background: #000080;
+  background: -moz-linear-gradient(left, #000080 0%, #1084d0 100%);
+  background: -webkit-linear-gradient(left, #000080 0%, #1084d0 100%);
+  background: linear-gradient(to right, #000080 0%, #1084d0 100%);
+}
+
+h3 {
+  font-size: 60px;
+  padding: 5px;
+}
+
+p {
+  font-style: oblique;
+  color: black;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+
+li a {
+  font-variant-caps: small-caps;
+  font-family: "VT323", monospace;
+  font-size: 35px;
+  color: rgb(245, 28, 245);
+}
+
+.footer {
+  font-variant: small-caps;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}

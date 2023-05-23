@@ -1,0 +1,136 @@
+@import url(./blog-cards.css);
+@import url(./sidebar.css);
+@import url(./fonts.css);
+@import url(./blog-post.css);
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Pridi&family=VT323&display=swap");
+
+.container {
+  display: grid;
+  height: fit-content;
+  grid-template-rows: 100px 1fr 1fr 1fr 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-areas:
+    "header  header  header  header"
+    "navbar  content content content"
+    "archive content content content"
+    "contact content content content"
+    "footer  footer  footer  footer";
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  border: solid black;
+  text-align: center;
+  background-color: silver;
+}
+
+.navbar {
+  grid-area: navbar;
+  border: solid black;
+  text-align: center;
+  height: fit-content;
+  background-color: silver;
+}
+
+.archive {
+  grid-area: archive;
+  border: solid black;
+  text-align: center;
+  height: fit-content;
+  background-color: silver;
+}
+
+.contact {
+  grid-area: contact;
+  border: solid black;
+  text-align: center;
+  height: fit-content;
+  background-color: silver;
+}
+
+.content {
+  grid-area: content;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  grid-area: footer;
+  border: solid black;
+  text-align: right;
+  background-color: silver;
+  padding: 5px;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "archive"
+      "contact"
+      "content"
+      "footer";
+  }
+
+  .content {
+    grid-area: content;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .author-info {
+    grid-area: a-info;
+    display: flex;
+    border: solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: silver;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 1020px) {
+  .container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "archive"
+      "contact"
+      "content"
+      "footer";
+  }
+  .content {
+    grid-area: content;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .author-info {
+    grid-area: a-info;
+    display: flex;
+    border: solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: silver;
+  }
+}
